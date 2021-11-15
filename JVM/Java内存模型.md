@@ -2,7 +2,7 @@
 
 #### 1.1 内存模型
 
-![](img/java-memory-model-1.png)
+![](img/Java内存模型/java-memory-model-1.png)
 
 图片来源：[Java Memory Model](http://tutorials.jenkov.com/java-concurrency/java-memory-model.html)
 
@@ -19,7 +19,7 @@
 
 #### 1.3 CPU 多级缓存
 
-![](img/java-memory-model-3.png)
+![](img/Java内存模型/java-memory-model-3.png)
 
 图片来源：[与程序员相关的 CPU 缓存知识 ](https://coolshell.cn/articles/20793.html)
 
@@ -27,7 +27,7 @@
 
 #### 2.1 主内存与工作内存
 
-![](img/java-memory-model-2.png)
+![](img/Java内存模型/java-memory-model-2.png)
 
 Java 内存模型规定所有的变量都必须存储在主内存中，而每条线程都有自己的工作内存，线程的工作内存中保存了主内存中对象的副本，线程对变量的所有操作都必须在工作内存中进行，而不能直接操作主内存中的变量。
 
@@ -46,7 +46,7 @@ JLS 定义了线程对主存的操作指令：`lock`，`unlock`，`read`，`load
 
 #### 2.2 Java 内存模型与计算机内存模型之间的关系
 
-![](img/java-memory-model-4.png)
+![](img/Java内存模型/java-memory-model-4.png)
 
 图片来源：[Java Memory Model](http://tutorials.jenkov.com/java-concurrency/java-memory-model.html)
 
@@ -60,7 +60,7 @@ JVM 中所有的栈内存与堆内存都在计算机中的 RAM 中，部分堆�
 
 Java 中可以通过`synchronized` 关键字来保证代码的原子性问题。Java 中的运算并非原子操作，竞争条件下操作共享变量，随时会出现线程安全问题。例如一个变量的自增操作，通过反编译会获取到多个操作指令的字节码。
 
-![](img/java-memory-model-6.png)
+![](img/Java内存模型/java-memory-model-6.png)
 
 #### 3.2 可见性
 
